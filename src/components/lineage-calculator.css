@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+.led-input { background: #F8F2E1; border: 1px solid #C9BBA0; color: #2B2118; font-family: 'IBM Plex Mono', monospace; font-size: 14px; padding: 8px 10px; border-radius: 3px; width: 100%; outline: none; box-sizing: border-box; }
+.led-input:focus { border-color: #B5502D; box-shadow: 0 0 0 2px rgba(181,80,45,0.15); }
+.led-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #6B5A42; }
+::selection { background: #D9BE8E; }
+.mb-2 { margin-bottom: 8px; }
+.mb-3 { margin-bottom: 12px; }
+.ll-page { max-width: 960px; margin: 0 auto; padding: 32px 16px; box-sizing: border-box; }
+.ll-header { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 8px; }
+.ll-reset-btn { align-self: flex-start; }
+.ll-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 32px; }
+.ll-timeline-wrap { padding-left: 12px; padding-right: 12px; }
+.ll-timeline-inner { min-width: 520px; }
+.ll-axis, .ll-today-label { margin-left: 128px; }
+.ll-gridlines { left: 128px; }
+.ll-row-label { width: 128px; padding-right: 8px; }
+.ll-tick { font-size: 10px; }
+.ll-row-no { font-size: 10px; }
+.ll-row-title { font-size: 13px; }
+.ll-row { min-height: 52px; padding: 10px 0; }
+@media (min-width: 640px) {
+  .ll-page { padding: 80px 24px; }
+  .ll-header { flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; }
+  .ll-reset-btn { align-self: auto; }
+  .ll-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .ll-timeline-wrap { padding-left: 20px; padding-right: 20px; }
+  .ll-timeline-inner { min-width: 640px; }
+  .ll-axis, .ll-today-label { margin-left: 168px; }
+  .ll-gridlines { left: 168px; }
+  .ll-row-label { width: 168px; padding-right: 14px; }
+  .ll-tick { font-size: 11px; }
+  .ll-row-no { font-size: 11px; }
+  .ll-row-title { font-size: 14px; }
+  .ll-row { min-height: 52px; padding: 0; }
+}
